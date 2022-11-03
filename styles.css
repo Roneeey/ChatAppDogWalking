@@ -300,16 +300,19 @@ img {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .content {
     width: 85%;
+    text-align: center;
   }
 
   .background-graphic {
     width: 62%;
-    height: 53%;
+    height: 65%;
+    top: -3.5rem;
     left: -5rem;
   }
 }
