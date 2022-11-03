@@ -300,8 +300,6 @@ img {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
   }
 
   .content {
@@ -312,7 +310,7 @@ img {
   .background-graphic {
     width: 62%;
     height: 65%;
-    top: -3.5rem;
+
     left: -5rem;
   }
 }
