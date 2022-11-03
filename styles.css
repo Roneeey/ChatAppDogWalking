@@ -47,7 +47,7 @@ body {
 
 .background-graphic {
   position: absolute;
-  top: 0;
+  top: -3.5rem;
   left: -5rem;
   background-image: linear-gradient(
     to bottom,
@@ -55,9 +55,9 @@ body {
     var(--gradient-light-violet)
   );
   width: 37%;
-  height: 87%;
+  height: 120%;
   z-index: -1;
-  border-radius: 0 0 300px 300px;
+  border-radius: 0 0 400px 400px;
 }
 
 header {
@@ -65,9 +65,9 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10rem;
-  height: 900px;
   max-width: 1440px;
   position: relative;
+  margin-top: 3rem;
 }
 
 img {
