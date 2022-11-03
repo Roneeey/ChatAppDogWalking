@@ -1,0 +1,315 @@
+/* Rubik 400 | 500 | 700 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  /* Text */
+  --pale-violet: hsl(276, 100%, 81%); /* sub-heading at the top of the app UI */
+  --moderate-violet: hsl(276, 55%, 52%); /* chat on the left */
+  --desaturated-dark-violet: hsl(271, 15%, 43%); /* chat on the right */
+  --grayish-blue: hsl(206, 6%, 79%); /* placeholder text */
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%); /* main heading */
+  --dark-grayish-violet: hsl(270, 7%, 64%); /* paragraph */
+
+  /* Gradients */
+
+  /* These two colors are the vibrant background colors you see throughout 
+the design and are applied as a linear gradient: */
+
+  --gradient-light-magenta: hsl(293, 100%, 63%);
+  --gradient-light-violet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 20%, 96%); /* app background */
+  --very-dark-desaturated-violet: hsl(
+    271,
+    36%,
+    24%
+  ); /* submit button background */
+  --very-light-magenta: hsl(289, 100%, 72%); /* radio button outline */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', serif;
+  font-size: 16px;
+  background-color: var(--light-grayish-violet);
+  color: var(--dark-grayish-violet);
+  display: flex;
+  justify-content: center;
+}
+
+.background-graphic {
+  position: absolute;
+  top: 0;
+  left: -5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient-light-magenta),
+    var(--gradient-light-violet)
+  );
+  width: 37%;
+  height: 87%;
+  z-index: -1;
+  border-radius: 0 0 300px 300px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10rem;
+  height: 100vh;
+  max-width: 1440px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.device-holder {
+  justify-self: end;
+}
+
+.mobile-device-container {
+  width: 250px;
+  height: 500px;
+}
+
+.mobile-device-frame {
+  background-color: var(--white);
+  height: 100%;
+  border-radius: 35px;
+  padding: 0.7rem;
+  box-shadow: 3px 20px 25px -10px rgba(80, 79, 79, 0.349);
+}
+
+.mobile-device-screen {
+  background-color: var(--light-grayish-violet);
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* TOP SECTION FOR USER NAME AND STATUS */
+.top-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-light-violet),
+    var(--gradient-light-magenta)
+  );
+  border-radius: 25px 25px 5px 5px;
+  padding: 1.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.user-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.user-name {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.user-status {
+  font-size: 0.5rem;
+  color: var(--white);
+  opacity: 40%;
+  margin-top: 2px;
+}
+
+.top-section i {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.dot-menu {
+  opacity: 70%;
+}
+
+.top-section-graphic {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 55%;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 0px 0px 13px 13px;
+}
+
+/* SCREEN CONTENT SECTION */
+.screen-content {
+  padding: 0.8rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: hsla(268, 37%, 81%, 0.253);
+  color: var(--moderate-violet);
+  font-size: 0.5rem;
+  line-height: 0.7rem;
+  width: 60%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.card-text-message-purple {
+  border-radius: 10px 10px 10px 4px;
+}
+
+.dog-pic-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 65%;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.dog-pic-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.card-text-message-white {
+  background-color: var(--white);
+  border-radius: 10px 10px 4px 10px;
+  color: var(--desaturated-dark-violet);
+  align-self: flex-end;
+  box-shadow: 0 3px 5px rgba(173, 173, 173, 0.336);
+}
+
+.margin {
+  margin-top: 0.5rem;
+}
+
+.small {
+  max-width: fit-content;
+}
+
+.card-pricing-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-light-magenta),
+    var(--gradient-light-violet)
+  );
+  color: var(--grayish-blue);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 10px 4px;
+  width: 77%;
+  padding: 0.7rem 1rem 0.6rem 0.5rem;
+}
+
+.radio-text-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--grayish-blue);
+}
+
+.radio-btn {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--very-light-magenta);
+  border-radius: 50%;
+}
+
+.typing-field {
+  background-color: var(--white);
+  border-radius: 50px;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.3rem 0.4rem 1.3rem;
+  color: var(--grayish-blue);
+}
+
+.typing-field p {
+  font-size: 0.6rem;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.typing-field i {
+  font-size: 1.5rem;
+  color: var(--very-dark-desaturated-violet);
+}
+
+/* CONTENT RIGHT HAND SIDE SECTION */
+.content {
+  width: 75%;
+}
+
+.content h1 {
+  color: var(--very-dark-desaturated-violet);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  line-height: 1.7rem;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .content {
+    width: 85%;
+  }
+
+  .background-graphic {
+    width: 62%;
+    height: 53%;
+    left: -5rem;
+  }
+}
